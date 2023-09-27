@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Reconstructing Action-Conditioned Human-Object Interactions Using Commonsense Knowledge Priors.">
+  <meta name="keywords" content="rhoi">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reconstruction of 3D Interaction Models from Images using Shape Prior</title>
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-72PW1FZDE4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-72PW1FZDE4');
+  </script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Reconstruction of 3D Interaction Models from Images using Shape Prior</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Mehrshad Mirmohammadi</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Parham Saremi</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yenlingkuo.com/">Yen-Ling Kuo</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/xiwang/">Xi Wang</a><sup>3</sup>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Sharif University of Technology, Iran</span>
+            <br>
+            <span class="author-block"><sup>2</sup>University of Virginia, USA</span>
+            <br>
+            <span class="author-block"><sup>3</sup>ETH Zurich, Switzerland</span>
+            <br>
+            <span class="author-block">  <b>In Proceedings of the International Conference on Computer Vision Workshop, 2023.</b></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.come/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+          </div>
+    </div>
+</section>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="diagram">
+        <img src="static/images/method-overview.png" alt="Overview" height="750" width="1000" />
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We investigate the reconstruction of 3D human-object interactions from images, encompassing 3D human shape
+            and pose estimation as well as object shape and pose estimation. To address this task, we introduce an
+            autoregressive transformer-based variational autoencoder capable of learning a robust shape prior from
+            extensive 3D shape datasets. Additionally, we leverage the reconstructed 3D human body as supplementary
+            features for object shape and pose estimation. In contrast, prior methods only predict object pose and rely
+            on shape templates for shape prediction. Experimental findings on the BEHAVE dataset underscore the
+            effectiveness of our proposed approach, achieving a 40.7cm Chamfer distance and demonstrating the
+            advantages of learning a shape prior.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Poster</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="diagram">
+            <img src="static/images/poster.png" alt="Overview" height="750" width="1000" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{Mirmohammadi2023reconstruction,
+      title={Reconstruction of 3D Interaction Models from Images using Shape Prior},
+      author={Mirmohammadi, Mehrshad and Saremi, Parham and Kuo, Yen-Ling and Wang, Xi},
+      booktitle={International Conference on Computer Vision (ICCV) Workshops},
+      year={2023}
+    }</code></pre>
+  </div>
+</section>
+
+</body>
+</html>
